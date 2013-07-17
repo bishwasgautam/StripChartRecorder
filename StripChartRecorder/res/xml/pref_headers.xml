@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <header
+        android:id="@+id/pref_device_info"
+        android:fragment="bishwas.gcdc.stripchartrecorder.core.PrefFragment"
+        android:title="Device Information" >
+        <extra
+            android:name="resource"
+            android:value="device_info" />
+    </header>
+    <header
+        android:id="@+id/pref_sample_rates"
+        android:fragment="bishwas.gcdc.stripchartrecorder.core.PrefFragment"
+        android:title="Sample Rate" >
+        <extra
+            android:name="resource"
+            android:value="sample_rates" />
+    </header>
+    <header
+        android:id="@+id/pref_config_info"
+        android:fragment="bishwas.gcdc.stripchartrecorder.core.PrefFragment"
+        android:title="Configuration Info" >
+        <extra
+            android:name="resource"
+            android:value="config_info" />
+    </header>
+    <header
+        android:id="@+id/pref_device_status"
+        android:fragment="bishwas.gcdc.stripchartrecorder.core.PrefFragment"
+        android:title="Device Status" >
+        <extra
+            android:name="resource"
+            android:value="device_status" />
+    </header>
+
+</preference-headers>

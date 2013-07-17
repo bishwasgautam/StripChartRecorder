@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="appTheme">
+        <item name="android:background">#00435c</item>
+    </style>
+
+    <style name="btnBackground" parent="@android:style/ButtonBar">
+        <item name="android:background">#D6D8D3</item>
+    </style>
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Strip Chart Recorder</string>
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="bt_not_enabled">Sorry, Bluetooth is not enabled on this device.</string>
+    <string name="bt_connection_lost">Oops, the connection was lost. Trying to reconnect.</string>
+    <string name="bt_connection_unsuccessful">Cannot connect to device</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Devices</string>
+    <string name="button_scan">Scan</string>
+    <string name="scanning">Scanning for new devices</string>
+    <string name="select_device">Choose device to connect </string>
+    <string name="none_found">No devices found.</string>
+    <string name="none_paired">No paired device found</string>
+    <string name="btn_connect">Connect Device</string>
+    <string name="connected_to">Connected to</string>
+    <string name="btn_start_streaming">Start Streaming</string>
+    <string name="btn_stop_streaming">Stop Streaming</string>
+    <string name="bt_enabled">Bluetooth turned on.</string>
+    <string name="receiving_msg">Receiving : </string>
+    <string name="connecting_to">Connecting to :</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_control_panel_management">ControlPanelManagement</string>
+    <string name="about_tab">Test_tab_Activity</string>
+    <string name="available_sample_rates">Available Sample Rates</string>
+    <string name="title_activity_control_panel_web_fragment">ControlPanelWebFragment</string>
+    <string name="title_activity_preferences">PreferencesActivity</string>
+    <string name="key_device_name">Default</string>
+    <string name="x">X</string>
+    <string name="Y">Y</string>
+    <string name="z">Z</string>
+    <string name="rms">RMS</string>
+    <string name="btn_reset">Reset</string>
+
+    <color name="gcdcBlue">#0083B3</color>
+    <color name="gcdcLtGrey">#D6D8D3</color>
+    <color name="gcdcDkBlue">#00435c</color>
+    <color name="gcdcBlack">#000405</color>
+
+    <string name="xSeriesColorCode">-65536</string>
+    <string name="ySeriesColorCode">-16711936</string>
+    <string name="zSeriesColorCode">-256</string>
+    <string name="rmsSeriesColorCode">-16711681 </string>
+    <string name="tb_autoscale">AutoScale : </string>
+    <string name="tv_autoscale">Auto Scale </string>
+    <string name="key_sample_rate_listpref">sample_rate_listpref</string>
+    <string name="whats_in_about">Version Information, Link to Purchase Hardware, support email, gcdc info and developer info go here</string>
+    <string name="chart_name">Default Perspective</string>
+    <string name="autoscale_text_on">Auto Scale On</string>
+    <string name="autoscale_text_off">Auto Scale Off</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="stop">Stop</string>
+    <string name="clear_graph">Clear</string>
+    <string name="about_gcdc">About GCDC</string>
+    <string name="about_gcdc_info">GCDC was established in 2007 after its founding officers decided to give up their day jobs as government contractors. We specialize in designing and producing products that are as much fun to play with as they are to design. GCDC prides itself on designing, producing, and selling high quality products at a reasonable cost.\n
+
+Our contact information\n
+
+By email: gcdc@gcdataconcepts.com\n
+
+By standard mail:\n
+Gulf Coast Data Concepts\n
+611 Nicholson Avenue\n
+Waveland, MS 39576\n
+sales@gcdataconcepts.com</string>
+    <string name="about_scr_info">Version 1.71.092312\nDeveloper: Bishwas Gautam\nfacebook.com/gbishwas\nLibraries used: GraphView</string>
+    <string name="get_device">Get Device</string>
+    <string name="about_scr">About SCR</string>
+    <string name="demo">Run Demo</string>
+
+</resources>

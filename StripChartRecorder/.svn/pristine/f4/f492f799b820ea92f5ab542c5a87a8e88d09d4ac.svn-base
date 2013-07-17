@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout_testtab"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gcdcDkBlue" >
+
+    <Button
+        android:id="@+id/btn_about_scr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/about_scr" />
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/btn_about_scr"
+        android:text="@string/get_device" />
+
+    <Button
+        android:id="@+id/btn_gcdcinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/btn_buy"
+        android:text="@string/about_gcdc" />
+
+</RelativeLayout>

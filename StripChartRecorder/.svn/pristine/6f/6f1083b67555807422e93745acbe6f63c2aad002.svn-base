@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gcdcDkBlue"
+    android:orientation="horizontal" >
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list_fragment"
+        android:name="bishwas.gcdc.stripchartrecorder.helpers.ControlPanelListFrag"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="45" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/tutview_fragment"
+        android:name="bishwas.gcdc.stripchartrecorder.helpers.ControlPanelWebFrag"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="55" >
+    </fragment>
+
+</LinearLayout>

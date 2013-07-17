@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+     
+    <PreferenceCategory
+        android:title="Sample Rate Info">
+        
+         <Preference
+            android:key="sampleRatePref"
+            android:summary="This works almost like a button"
+            android:title="Available Rates" />
+        <ListPreference
+            
+            android:key="sample_rates_list_pref"
+            android:persistent="true"
+            android:title="Change current sample rate"
+            android:dialogTitle="Choose sample rate"
+            android:defaultValue="0"
+            android:selectable="true"/>
+        
+    </PreferenceCategory>
+        
+
+</PreferenceScreen>

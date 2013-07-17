@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Preferences" >
+
+    <PreferenceCategory android:title="Default Device" >
+        <EditTextPreference
+            android:defaultValue=""
+            android:inputType="text"
+            android:key="@string/key_device_name"
+            android:persistent="true"
+            android:summary="Click to rename"
+            android:title="Friendly Device Name" >
+        </EditTextPreference>
+
+        <Preference
+            android:key="deviceInfoPref"
+            android:summary="This works almost like a button"
+            android:title="Device Info" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

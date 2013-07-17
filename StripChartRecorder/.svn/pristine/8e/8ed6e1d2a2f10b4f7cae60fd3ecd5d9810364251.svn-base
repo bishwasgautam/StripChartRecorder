@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@android:id/tabs" >
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/main_relative_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/gcdcDkBlue"
+                android:gravity="right" >
+
+                <TextView
+                    android:id="@+id/connected_to_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/connected_to"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/stream_message_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/connected_to_textview"
+                    android:text="@string/receiving_msg"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/graphViewLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/connected_to_textview"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@+id/zoomControls"
+                    android:orientation="horizontal" />
+
+                <CheckBox
+                    android:id="@+id/cb_x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/stream_message_textview"
+                    android:checked="true"
+                    android:text="@string/x" />
+
+                <CheckBox
+                    android:id="@+id/cb_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_below="@id/stream_message_textview"
+                    android:layout_toLeftOf="@id/graphViewLayout"
+                    android:layout_toRightOf="@id/cb_x"
+                    android:checked="true"
+                    android:text="@string/Y" />
+
+                <CheckBox
+                    android:id="@+id/cb_z"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/cb_x"
+                    android:checked="true"
+                    android:text="@string/z" />
+
+                <CheckBox
+                    android:id="@+id/cb_rms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cb_y"
+                    android:layout_toLeftOf="@id/graphViewLayout"
+                    android:layout_toRightOf="@id/cb_z"
+                    android:checked="true"
+                    android:text="@string/rms" />
+
+                <ZoomControls
+                    android:id="@+id/zoomControls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true" />
+
+                <Button
+                    android:id="@+id/btn_zoom_reset"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/zoomControls"
+                    android:layout_alignLeft="@+id/zoomControls"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/btn_reset" />
+
+                <Button
+                    android:id="@+id/btn_clear_graph"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/zoomControls"
+                    android:layout_toLeftOf="@id/graphViewLayout"
+                    android:layout_toRightOf="@id/btn_zoom_reset"
+                    android:text="@string/clear_graph" />
+
+                <ToggleButton
+                    android:id="@+id/tb_autoscale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/btn_zoom_reset"
+                    android:layout_alignLeft="@id/btn_zoom_reset"
+                    android:layout_alignRight="@id/btn_clear_graph"
+                    android:text="@string/tb_autoscale"
+                    android:textOff="@string/autoscale_text_off"
+                    android:textOn="@string/autoscale_text_on" />
+
+                <Button
+                    android:id="@+id/btn_ppr"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tb_autoscale"
+                    android:layout_alignParentLeft="true"
+                    android:enabled="false"
+                    android:text="@string/play" />
+
+                <Button
+                    android:id="@+id/btn_stop"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tb_autoscale"
+                    android:layout_toLeftOf="@id/graphViewLayout"
+                    android:layout_toRightOf="@id/btn_ppr"
+                    android:enabled="false"
+                    android:text="@string/stop" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</TabHost>
